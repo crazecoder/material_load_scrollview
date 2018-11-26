@@ -36,5 +36,7 @@ MaterialLoadScrollView(
                 ),
           ),
         );
+
+_key.currentState.reset();
 ```
 
