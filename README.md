@@ -1,6 +1,6 @@
 # material_load_scrollview
 
-A Flutter pull refresh and load more Plugin.
+A widget that make the ScrollView to be push to load data,and click to refresh data,support custom footer,Theoretically compatible with all Scrollable Widgets.
 
 ![Screenshot](https://raw.githubusercontent.com/crazecoder/material_load_scrollview/master/screenshots/view.gif)
 
@@ -10,7 +10,7 @@ In your pubspec.yaml:
 
 ```yaml
 dependencies:
-   material_load_scrollview: ^0.0.1
+    material_load_scrollview: ^1.0.0
 ```
 
 ```dart
