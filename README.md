@@ -10,7 +10,7 @@ In your pubspec.yaml:
 
 ```yaml
 dependencies:
-  material_load_scrollview: ^1.0.0
+   material_load_scrollview: ^0.0.1
 ```
 
 ```dart
