@@ -1,8 +1,8 @@
 name: material_load_scrollview
 description: A Flutter pull refresh and load more Plugin.
 version: 0.0.1
-author:
-homepage:
+author: crazecoder <21527312@qq.com>
+homepage: https://github.com/crazecoder/material_load_scrollview
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
