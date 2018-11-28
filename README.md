@@ -3,7 +3,7 @@
 
 A widget that make the ScrollView to be push to load data,and click to refresh data,support custom footer,Theoretically compatible with all Scrollable Widgets.
 
-![Screenshot](https://raw.githubusercontent.com/crazecoder/material_load_scrollview/master/screenshots/view.gif)
+<img src="https://raw.githubusercontent.com/crazecoder/material_load_scrollview/master/screenshots/view.gif" width="50%" height="50%" />
 
 ## Getting Started
 
