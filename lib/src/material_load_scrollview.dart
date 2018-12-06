@@ -75,6 +75,7 @@ class MaterialLoadScrollViewState extends State<MaterialLoadScrollView>
     return Scaffold(
       body: _column,
       floatingActionButton: FloatingActionButton(
+          heroTag: "${DateTime.now()}",
           child: loadMoreStatus == LoadingStatus.REFRESHING
               ? RefreshProgressIndicator(
                   backgroundColor: Colors.white,
@@ -105,7 +106,9 @@ class MaterialLoadScrollViewState extends State<MaterialLoadScrollView>
               Container(
                 height: 18,
                 width: 18,
-                child: CircularProgressIndicator(strokeWidth:2,),
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                ),
               ),
               Container(
                 margin: EdgeInsets.only(left: 10),
