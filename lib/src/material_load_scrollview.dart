@@ -149,6 +149,8 @@ class MaterialLoadScrollViewState extends State<MaterialLoadScrollView>
   reset() {
     if (loadMoreStatus == LoadingStatus.REFRESHING)
       widget.child?.controller?.jumpTo(0);
-    loadMoreStatus = LoadingStatus.STABLE;
+    setState(() {
+      loadMoreStatus = LoadingStatus.STABLE;
+    });
   }
 }
