@@ -65,11 +65,11 @@ class MaterialLoadScrollViewState extends State<MaterialLoadScrollView>
                 _onNotification(notification, context),
           ),
         ),
-        loadMoreStatus == LoadingStatus.LOADING
-            ? _buildLoadingView()
-            : Container(
-                height: 0,
-              ),
+        Offstage(
+          child: _buildLoadingView(),
+          offstage: loadMoreStatus == LoadingStatus.STABLE ||
+              loadMoreStatus == LoadingStatus.REFRESHING,
+        )
       ],
     );
     return Scaffold(
