@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   GlobalKey<MaterialLoadScrollViewState> _key =
-      new GlobalKey(); //necessary for resetLoadStatus
+  new GlobalKey(); //necessary for resetLoadStatus
   int _page = 1;
   final _itemCount = 30;
 
@@ -50,11 +50,11 @@ class _MyAppState extends State<MyApp> {
             //necessary for scroll to top when onRefresh
             itemCount: _page * _itemCount,
             itemBuilder: (_, _i) => Container(
-                  margin: EdgeInsets.only(bottom: 8.0),
-                  color: Colors.white,
-                  padding: EdgeInsets.all(8.0),
-                  child: Text("$_i"),
-                ),
+              margin: EdgeInsets.only(bottom: 8.0),
+              color: Colors.white,
+              padding: EdgeInsets.all(8.0),
+              child: Text("$_i"),
+            ),
           ),
         ),
       ),

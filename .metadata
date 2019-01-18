@@ -7,4 +7,4 @@ version:
   revision: d48e6e433cc5ca67b24b19f70aaa197e84ba63c1
   channel: beta
 
-project_type: plugin
+project_type: package

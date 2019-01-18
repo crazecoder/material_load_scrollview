@@ -1,71 +1,16 @@
-# material_load_scrollview_example
+# example
 
-```dart
-import 'package:flutter/material.dart';
-import 'dart:async';
-import 'package:material_load_scrollview/material_load_scrollview.dart';
+A new Flutter project.
 
-void main() => runApp(MyApp());
+## Getting Started
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
+This project is a starting point for a Flutter application.
 
-class _MyAppState extends State<MyApp> {
-  GlobalKey<MaterialLoadScrollViewState> _key =
-      new GlobalKey(); //necessary for resetLoadStatus
-  int _page = 1;
-  final _itemCount = 30;
+A few resources to get you started if this is your first Flutter project:
 
-  @override
-  void initState() {
-    super.initState();
-  }
+- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('MaterialLoadScrollView example'),
-        ),
-        body: MaterialLoadScrollView(
-          key: _key,
-          onRefresh: () {
-            Future.delayed(Duration(seconds: 3)).then((_) {
-              setState(() {
-                _page = 1;
-                _resetLoadStatus();
-              });
-            });
-          },
-          onLoadMore: () {
-            Future.delayed(Duration(seconds: 3)).then((_) {
-              setState(() {
-                _page++;
-                _resetLoadStatus();
-              });
-            });
-          },
-          child: ListView.builder(
-            controller: ScrollController(),
-            //necessary for scroll to top when onRefresh
-            itemCount: _page * _itemCount,
-            itemBuilder: (_, _i) => Container(
-                  margin: EdgeInsets.only(bottom: 8.0),
-                  color: Colors.white,
-                  padding: EdgeInsets.all(8.0),
-                  child: Text("$_i"),
-                ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  _resetLoadStatus() {
-    _key.currentState.reset();
-  }
-}
-```
+For help getting started with Flutter, view our 
+[online documentation](https://flutter.io/docs), which offers tutorials, 
+samples, guidance on mobile development, and a full API reference.

@@ -1,6 +1,13 @@
-name: material_load_scrollview_example
-description: Demonstrates how to use the material_load_scrollview plugin.
-publish_to: 'none'
+name: example
+description: A new Flutter project.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -19,6 +26,7 @@ dev_dependencies:
 
   material_load_scrollview:
     path: ../
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
