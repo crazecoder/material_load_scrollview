@@ -1,6 +1,6 @@
 name: material_load_scrollview
 description: A widget that make the ScrollView to be push to load data,and click to refresh data,support custom footer,Theoretically compatible with all Scrollable Widgets.
-version: 1.0.3
+version: 1.0.4
 author: crazecoder <21527312@qq.com>
 homepage: https://github.com/crazecoder/material_load_scrollview
 
